@@ -3,7 +3,7 @@
 type ButtonProps = {
   label: string;
   onClick: () => void;
-  variant?: "orange" | "teal" | "gray";
+  variant?: "orange" | "blue" | "gray";
 };
 
 export const Button = ({
@@ -18,8 +18,8 @@ export const Button = ({
 
   if (variant === "orange") {
     variantClasse = "bg-orange-500 text-white hover:bg-orange-600";
-  } else if (variant === "teal") {
-    variantClasse = "bg-teal-500 text-white hover:bg-teal-600";
+  } else if (variant === "blue") {
+    variantClasse = "bg-[#0B1F3A] text-white hover:bg-teal-600";
   }
 
   return (
