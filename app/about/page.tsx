@@ -18,7 +18,7 @@ export default function AboutPage() {
           >
             <div className="relative z-10 rounded-[2.5rem] overflow-hidden border-8 border-gray-50 shadow-2xl">
               <Image 
-                src="/about/profile.jpg" // Add your professional photo here
+                src="/images/ms.png" // Add your professional photo here
                 alt="MS Visuals Founder"
                 width={600}
                 height={700}
@@ -101,7 +101,7 @@ export default function AboutPage() {
 
       {/* 3. ACHIEVEMENTS - High Contrast Section */}
       <section className="bg-[#0B1F3A] py-20">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12">
             <div className="text-white max-w-md">
               <h2 className="text-3xl font-bold mb-4 italic">Recognized for Excellence</h2>
@@ -128,7 +128,7 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           className="max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0B1F3A] mb-8 tracking-tighter">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0B1F3A] mb-8 tracking-tighter">
             HAVE A PROJECT IN MIND? <br/> <span className="text-orange-500 uppercase">LET&apos;S SCALE IT.</span>
           </h2>
           <p className="text-gray-500 mb-10 text-sm md:text-base">

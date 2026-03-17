@@ -55,7 +55,7 @@ export default function Hero() {
           <Button
             label="See My Work"
             variant="gray"
-            onClick={() => router.push("/blog")} 
+            onClick={() => router.push("/portfolio")} 
           />
         </div>
       </div>

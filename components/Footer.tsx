@@ -42,35 +42,35 @@ export default function Footer() {
         {/* Social Icons Row with Meta & WhatsApp */}
         <div className="flex items-center justify-center gap-8 text-[#0B1F3A] mb-8">
           <Link 
-            href="https://facebook.com/yourprofile" 
+            href="https://www.facebook.com/MSmarketing233/" 
             aria-label="Facebook" 
             className="hover:text-[#1877F2] transition-all hover:-translate-y-1"
           >
             <FaFacebook size={20} />
           </Link>
           <Link 
-            href="https://instagram.com/yourprofile" 
+            href="https://www.instagram.com/mspro736/" 
             aria-label="Instagram" 
             className="hover:text-[#E4405F] transition-all hover:-translate-y-1"
           >
             <FaInstagram size={20} />
           </Link>
           <Link 
-            href="https://twitter.com/yourprofile" 
+            href="https://x.com/mariashazadi233" 
             aria-label="Twitter" 
             className="hover:text-[#1DA1F2] transition-all hover:-translate-y-1"
           >
             <FaTwitter size={20} />
           </Link>
           <Link 
-            href="https://linkedin.com/in/yourprofile" 
+            href="https://www.linkedin.com/in/maria-shahzadi-291a37385/" 
             aria-label="LinkedIn" 
             className="hover:text-[#0A66C2] transition-all hover:-translate-y-1"
           >
             <FaLinkedin size={20} />
           </Link>
           <Link 
-            href="https://wa.me/yourphonenumber" 
+            href="https://wa.me/message/SU24X2TKOCVVG1" 
             aria-label="WhatsApp" 
             className="hover:text-[#25D366] transition-all hover:-translate-y-1"
           >

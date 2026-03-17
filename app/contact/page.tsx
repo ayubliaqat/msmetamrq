@@ -28,7 +28,7 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-6">
         
         {/* 1. HEADER SECTION */}
-        <section className="text-center mb-20">
+        <section className="text-center mb-20 shadow-gray-100">
           <motion.span 
             initial={{ opacity: 0 }} animate={{ opacity: 1 }}
             className="text-orange-500 font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block"
@@ -60,8 +60,8 @@ export default function ContactPage() {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Email Us</p>
-                    <p className="text-[#0B1F3A] font-bold text-lg">hello@msvisuals.com</p>
+                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Email Me</p>
+                    <p className="text-[#0B1F3A] font-bold text-lg">mariashahzadi502@gmail.com</p>
                   </div>
                 </div>
 
@@ -72,7 +72,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">WhatsApp / Call</p>
-                    <p className="text-[#0B1F3A] font-bold text-lg">+92 300 1234567</p>
+                    <p className="text-[#0B1F3A] font-bold text-lg">+92 3153183949</p>
                   </div>
                 </div>
 
