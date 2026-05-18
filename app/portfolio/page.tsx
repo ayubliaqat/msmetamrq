@@ -7,25 +7,30 @@ import { ArrowUpRight, Briefcase, Users, Layout, Trophy, X, Search } from "lucid
 
 // 1. Expanded Project Data (5 per category recommended)
 const projects = [
-  // Graphic Design
-  { id: 1, title: "Modern Brand Identity", category: "Graphic Design", image: "/portfolio/brand-1.jpg" },
-  { id: 2, title: "Corporate Rebranding", category: "Graphic Design", image: "/portfolio/brand-2.jpg" },
-  { id: 3, title: "Minimalist Stationery", category: "Graphic Design", image: "/portfolio/brand-3.jpg" },
-  { id: 4, title: "Product Packaging", category: "Graphic Design", image: "/portfolio/brand-4.jpg" },
-  { id: 5, title: "Vector Illustration", category: "Graphic Design", image: "/portfolio/brand-5.jpg" },
-  
-  // Meta Marketing
-  { id: 6, title: "E-commerce Growth", category: "Meta Marketing", image: "/portfolio/meta-1.jpg" },
-  { id: 7, title: "Luxury Fashion Ads", category: "Meta Marketing", image: "/portfolio/meta-2.jpg" },
-  { id: 8, title: "Real Estate Funnel", category: "Meta Marketing", image: "/portfolio/meta-3.jpg" },
-  { id: 9, title: "Lead Gen Campaign", category: "Meta Marketing", image: "/portfolio/meta-4.jpg" },
-  { id: 10, title: "Retargeting Strategy", category: "Meta Marketing", image: "/portfolio/meta-5.jpg" },
+  // Graphic Design (1–20)
+  ...Array.from({ length: 20 }, (_, i) => ({
+    id: i + 1,
+    title: `Graphic Design Project ${i + 1}`,
+    category: "Graphic Design",
+    image: `/images/graphics/${i + 1}.png`,
+  })),
 
-  // Shopify & WhatsApp (Add your specific images here)
-  { id: 11, title: "Tech Store Setup", category: "Shopify", image: "/portfolio/shopify-1.jpg" },
-  { id: 12, title: "WhatsApp CRM Setup", category: "WhatsApp", image: "/portfolio/whatsapp-1.jpg" },
+  // Meta Marketing (21–28)
+  ...Array.from({ length: 8 }, (_, i) => ({
+    id: i + 21,
+    title: `Meta Marketing Project ${i + 1}`,
+    category: "Meta Marketing",
+    image: `/images/graphics/${i + 21}.png`,
+  })),
+
+  // TikTok Marketing (29)
+  {
+    id: 29,
+    title: "TikTok Marketing Campaign",
+    category: "TikTok Marketing",
+    image: "/images/graphics/29.png",
+  },
 ];
-
 const categories = ["All", "Graphic Design", "Meta Marketing", "Shopify", "WhatsApp"];
 
 export default function PortfolioPage() {
