@@ -2,17 +2,16 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "Graphic Design", level: 90 },
-  { name: "Meta Ads Management", level: 92 },
-  { name: "TikTok Shop Consulting", level: 95 },
-  { name: "Shopify Management", level: 88 },
+  { name: "Google Ads", level: 90 },
+  { name: "Meta Campaign", level: 92 },
+  { name: "TikTok Shop", level: 95 },
+  { name: "Graphic Design", level: 88 },
 ];
 
 export default function About() {
   return (
     <section id="about" className="py-20 md:py-32 bg-gray-50 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12 lg:gap-20">
-        
         {/* About Text */}
         <motion.div
           className="w-full md:w-1/2" // Explicitly full width on mobile
@@ -24,13 +23,18 @@ export default function About() {
           <h2 className="text-4xl font-bold text-[#0B1F3A] mb-6">About Me</h2>
           <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
             <p>
-              I’m a creative digital marketer and graphic designer passionate about
-              helping brands grow. With expertise in graphic design, Meta ads,
-              TikTok shop, and Shopify management.
+              I’m a digital marketer focused on Google Ads, Meta campaigns, and
+              TikTok Shop strategies that help brands grow and get real results.
             </p>
             <p>
-              My goal is to deliver professional, results-driven work that elevates
-              your business and connects with your audience.
+              I work on building performance-driven systems that bring the right
+              audience, improve visibility, and turn traffic into customers.
+              Alongside that, I also handle graphic design to support strong,
+              consistent brand visuals.
+            </p>
+            <p>
+              My goal is simple: help businesses grow with smart ads, clear
+              strategy, and creative execution that actually performs.
             </p>
           </div>
         </motion.div>
@@ -49,9 +53,11 @@ export default function About() {
                 <h3 className="text-base font-bold text-[#0B1F3A] tracking-tight">
                   {skill.name}
                 </h3>
-                <span className="text-sm font-bold text-orange-500">{skill.level}%</span>
+                <span className="text-sm font-bold text-orange-500">
+                  {skill.level}%
+                </span>
               </div>
-              
+
               {/* Skill Bar Container */}
               <div className="w-full bg-gray-200 h-3 rounded-full overflow-hidden shadow-inner">
                 <motion.div
@@ -64,7 +70,6 @@ export default function About() {
             </div>
           ))}
         </motion.div>
-
       </div>
     </section>
   );

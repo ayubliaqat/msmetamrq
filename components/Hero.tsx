@@ -7,21 +7,25 @@ export default function Hero() {
   const router = useRouter();
   const [textIndex, setTextIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true); // Control for smoothness
-  
-  const texts = ["Graphic Design", "Social Media Campaigns", "Digital Growth"];
+
+  const texts = [
+    "Google Ads",
+    "Meta Campaigns",
+    "Tiktok Shop",
+    "Graphic Design",
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       // 1. Start fade out
       setIsVisible(false);
-      
+
       // 2. Wait for fade out, then change text and fade in
       setTimeout(() => {
         setTextIndex((prev) => (prev + 1) % texts.length);
         setIsVisible(true);
       }, 500); // This duration matches the CSS transition below
-      
-    }, 3500); 
+    }, 3500);
 
     return () => clearInterval(interval);
   }, [texts.length]);
@@ -31,9 +35,11 @@ export default function Hero() {
       <div className="max-w-5xl mx-auto px-6 flex flex-col items-center text-center">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 min-h-[1.2em]">
           Elevate Your Brand with{" "}
-          <span 
+          <span
             className={`text-orange-400 inline-block transition-all duration-700 ease-in-out transform ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-2"
             }`}
           >
             {texts[textIndex]}
@@ -41,8 +47,9 @@ export default function Hero() {
         </h1>
 
         <p className="text-md sm:text-lg md:text-xl text-gray-200 max-w-3xl opacity-90 mb-12">
-          MS Visuals crafts professional designs, social media campaigns, and
-          digital solutions that make your brand stand out and grow online.
+          Build a stronger digital presence with performance-driven ads,
+          creative strategy, and visuals that make your brand impossible to
+          ignore.
         </p>
 
         {/* Redirect Buttons */}
@@ -50,12 +57,12 @@ export default function Hero() {
           <Button
             label="Get Started"
             variant="orange"
-            onClick={() => router.push("/contact")} 
+            onClick={() => router.push("/contact")}
           />
           <Button
             label="See My Work"
             variant="gray"
-            onClick={() => router.push("/portfolio")} 
+            onClick={() => router.push("/portfolio")}
           />
         </div>
       </div>
